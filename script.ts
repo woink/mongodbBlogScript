@@ -16,7 +16,6 @@ const people = db.collection<PeopleSchema>('people');
 const firstName = faker.name.firstName();
 const age = faker.random.number(80);
 
-
 for (let i = 0; i < 1000000; i++) {
 	await people.insertOne({
     name: firstName,
